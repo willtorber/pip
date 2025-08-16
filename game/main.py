@@ -1,6 +1,6 @@
 import random
 
-# Definir constantes para las opciones
+# Define constants for the options
 ROCK = 'rock'
 PAPER = 'paper'
 SCISSORS = 'scissors'
@@ -9,7 +9,7 @@ SPOCK = 'spock'
 OPTIONS = (ROCK, PAPER, SCISSORS, LIZARD, SPOCK)
 WIN_CONDITION = 2
 
-# Definir las reglas de victoria en un diccionario para un acceso más limpio
+# Define the winning rules in a dictionary for cleaner access
 WIN_RULES = {
     SCISSORS: [PAPER, LIZARD],
     PAPER: [ROCK, SPOCK],
