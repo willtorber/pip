@@ -1,5 +1,83 @@
 # PIP and Virtual envs
 
+## Guide to install PIP
+
+This guide explains how to install **Python** and **PIP (Python Package Manager)** on different operating systems: **Windows (WSL/Linux)** and **MacOS**.  
+It also includes recommendations for professional environments.
+
+### Installation on Windows (WSL) and Linux
+
+#### Basic Commands
+```bash
+python      # Starts the interactive Python interface (sometimes points to Python 2)
+python3     # Starts Python 3
+exit()      # Exit the Python interface
+```
+
+#### Step 1: Update packages
+```bash
+sudo apt update
+sudo apt -y upgrade
+```
+
+#### Step 2: Check if Python is installed
+```bash
+python3 -V
+```
+
+#### Step 3: Install the package manager (PIP)
+```bash
+sudo apt install -y python3-pip
+```
+
+#### Step 4: Verify PIP installation
+```bash
+pip3 -V
+```
+
+#### Step 5: Install recommended dependencies for professional development environments
+```bash
+sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
+```
+
+### Installation on MacOS
+
+#### Basic Commands
+```bash
+python      # May point to Python 2 on some versions of macOS
+python3     # Recommended, always use Python 3
+exit()
+```
+
+#### Step 1: Check if Python is already installed
+Most modern macOS versions come with Python 3 preinstalled. To verify:
+```bash
+python3 -V
+```
+
+#### Step 2: Install Xcode developer tools (if necessary)
+```bash
+sudo xcode-select --install
+sudo xcode-select --reset
+```
+
+#### Step 3: Install Python using Homebrew (if not installed)
+First, make sure you have **Homebrew** installed. If not, install it with:
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Then install Python 3:
+```bash
+brew install python3
+```
+
+#### Step 4: Verify installation
+```bash
+python3 -V
+pip3 -V
+```
+
 ## PyPI and PIP in Python
 
 ### What is PyPI (Python Package Index)?
